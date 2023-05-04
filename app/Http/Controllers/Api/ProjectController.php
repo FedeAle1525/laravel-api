@@ -40,7 +40,7 @@ class ProjectController extends Controller
 
             return response()->json([
 
-                'success' => true,
+                'success' => false,
                 'error' => 'Nessun Progetto trovato'
             ]);
         }
