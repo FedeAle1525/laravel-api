@@ -20,6 +20,8 @@ class Project extends Model
         'type_id'
     ];
 
+    protected $with = ['type:id,name', 'technologies:id,name'];
+
     // Indico una Relazione: Project(s) [N:1] Type, cioe' un Progetto puo' avere una sola Tipologia 
     public function type()
     {

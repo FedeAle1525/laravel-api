@@ -21,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Rotta che interroga API passando per ApiController con metodo 'index'
 Route::get('/projects', [ProjectController::class, 'index']);
+
+// Rotta che interroga API passando per ApiController con metodo 'show'
+Route::get('/projects/{slug}', [ProjectController::class, 'show']);
